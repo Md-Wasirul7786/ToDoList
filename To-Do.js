@@ -2,7 +2,7 @@ const subBtn = document.querySelector(".TaskBtn");
 const title = document.querySelector("#title");
 const desc = document.querySelector("#description");
 const delBtn = document.querySelector(".DeleteBtn");
-//
+// store in Local storage and get it to display data
 function submitTask() {
   if (title.value === "" && desc.value === "") {
     alert("please enter Title value or Description value");
