@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link ul {
+    display: flex;
+    list-style: none;
+    margin: 4px;
+
+}
+
+.link ul li {
+    margin: 15px;
+
+}
+
+.link ul li a {
+    text-decoration: none;
+}
+
+.searchBar {
+    margin: 4px;
+    padding: 4px;
+
+}
+
+.searchBar .text {
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgb(188, 187, 187);
+}
+
+.searchBar #Btn {
+    padding: 5px;
+    font-weight: 800;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 2px solid rgb(31, 212, 31);
+
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+
+}
+
+.content {
+    background: linear-gradient(170deg, rgb(191, 255, 0), yellow);
+    width: 600px;
+    padding: 10px;
+    font-family: cursive;
+    /* border: 2px solid red; */
+    border-radius: 4px;
+}
+
+.Title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Title input {
+    padding: 8px;
+    width: 400px;
+    border-radius: 10px;
+
+}
+
+.Description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Description input {
+    padding: 8px;
+    width: 400px;
+    border-radius: 10px;
+
+}
+
+.Task-Btn {
+    display: flex;
+    margin: 0px 40px;
+    padding: 40px;
+    width: 400px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: 200px;
+}
+
+.TaskBtn {
+    font-size: 20px;
+    border-style:none;
+    border-radius: 45%;
+    /* border-style: dotted; */
+    border: 2px solid #4295f5;
+    padding: 15px; 
+    cursor: pointer;
+}
+.DeleteBtn{
+    font-size: 20px;
+    border-style:none;
+    border-radius: 45%;
+    /* border-style: dotted; */
+    border: 2px solid #4295f5;
+    padding: 15px; 
+    cursor: pointer;
+}
+.TaskBtn:hover{
+   background-color: yellow;
+}
+.TaskBtn:active{
+    background-color: yellowgreen;
+}
+.DeleteBtn:hover{
+    background-color: yellow;
+ }
+ .DeleteBtn:active{
+     background-color: yellowgreen;
+ }

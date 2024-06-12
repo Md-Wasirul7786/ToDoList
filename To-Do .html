@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do List</title>
+    <link rel="stylesheet" href="To-Do.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="Navbar">
+        <div class="link">
+          <ul>
+            <li><a href="">Todo</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+        </div>
+        <div class="searchBar">
+          <input type="text" class="text" placeholder="Search" />
+          <button id="Btn">Search</button>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="content">
+          <label for="">Todo Title</label>
+          <div class="Title">
+            <input type="text" id="title" placeholder="Enter your Title" />
+          </div>
+          <label for="">Todo Description</label>
+          <div class="Description">
+            <input
+              type="text"
+              id="description"
+              placeholder="Enter your Description"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="Task-Btn">
+        <button class="TaskBtn">Submit</button>
+        <button class="DeleteBtn">Delete</button>
+      </div>
+    </div>
+    <script src="To-Do.js"></script>
+  </body>
+</html>
