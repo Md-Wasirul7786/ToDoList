@@ -3,6 +3,21 @@ const title = document.querySelector("#title");
 const desc = document.querySelector("#description");
 const delBtn = document.querySelector(".DeleteBtn");
 const todo = document.querySelector("#todo");
+const aboutLink = document.querySelector("#About-link");
+const contents = document.querySelector("#content");
+//about Details
+function displayAboutDetails() {
+  const aboutContentDetails = `
+<div id="about-details">
+<h1>About Us </h1>
+<p>Welcome to our website ! We are  dedicated to providing the best  service possibles. </p>
+<p>Our team is composed of experience proffesionals who are passionate about their work. </p>
+<p>Contact us for more information. </p>
+</div>`;
+  contents.innerHTML = aboutContentDetails;
+  document.getElementById("about-details").style.display = "block";
+}
+
 // store in Local storage and get it to display data
 function submitTask() {
   if (title.value === "" && desc.value === "") {
@@ -19,7 +34,7 @@ function submitTask() {
   console.log(stringObj);
 
   let Taskelment = document.createElement("div");
-  Taskelment.classList="card";
+  Taskelment.classList = "card";
   Taskelment.innerHTML = `<h1>${todotask.title}</h1>
                         <p>${todotask.desc}</p>`;
   todo.appendChild(Taskelment);
@@ -30,6 +45,6 @@ function deleteBtn() {
   localStorage.removeItem("todo");
   console.log("deleted");
 }
-
 subBtn.addEventListener("click", submitTask);
 delBtn.addEventListener("click", deleteBtn);
+aboutLink.addEventListener("click", displayAboutDetails);

@@ -25,6 +25,22 @@
 .link ul li a {
     text-decoration: none;
 }
+#About-link{
+
+    text-decoration: none;
+    margin: 0 1rem;
+}
+#content {
+    padding: 4px;
+    background-color: aliceblue;
+    width: 300px;
+
+}
+
+#about-details {
+    display: none;
+}
+
 
 .searchBar {
     margin: 4px;
@@ -135,7 +151,7 @@
     min-width: 400px;
     text-align: center;
     margin-bottom: 12px;
-     
+
 }
 
 .card p {
