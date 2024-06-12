@@ -103,31 +103,58 @@
 
 .TaskBtn {
     font-size: 20px;
-    border-style:none;
+    border-style: none;
     border-radius: 45%;
     /* border-style: dotted; */
     border: 2px solid #4295f5;
-    padding: 15px; 
+    padding: 15px;
     cursor: pointer;
 }
-.DeleteBtn{
-    font-size: 20px;
-    border-style:none;
-    border-radius: 45%;
-    /* border-style: dotted; */
-    border: 2px solid #4295f5;
-    padding: 15px; 
-    cursor: pointer;
+
+.TaskBtn:hover {
+    background-color: yellow;
 }
-.TaskBtn:hover{
-   background-color: yellow;
-}
-.TaskBtn:active{
+
+.TaskBtn:active {
     background-color: yellowgreen;
 }
-.DeleteBtn:hover{
+
+#todo {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    color: rgb(255, 0, 132);
+    border-radius: 5px;
+    background-color: rgb(202, 222, 222);
+    min-width: 400px;
+    text-align: center;
+    margin-bottom: 12px;
+     
+}
+
+.card p {
+    color: rgb(47, 0, 255);
+}
+
+.DeleteBtn {
+    font-size: 20px;
+    border-style: none;
+    border-radius: 45%;
+    border: 2px solid #4295f5;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.DeleteBtn:hover {
     background-color: yellow;
- }
- .DeleteBtn:active{
-     background-color: yellowgreen;
- }
+}
+
+.DeleteBtn:active {
+    background-color: yellowgreen;
+}
